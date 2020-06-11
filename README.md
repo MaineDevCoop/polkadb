@@ -1,21 +1,6 @@
-<img src="http://i.imgur.com/9O1xHFb.png" style="width: 25%; height: 25%; float: left;">
-
-## The JavaScript Database
+## The JSON Database
 
 **Embedded persistent or in memory database for Node.js, nw.js, Electron and browsers, 100% JavaScript, no binary dependency**. API is a subset of MongoDB's and it's <a href="#speed">plenty fast</a>.
-
-**IMPORTANT NOTE**: Please don't submit issues for questions regarding your code. Only actual bugs or feature requests will be answered, all others will be closed without comment. Also, please follow the <a href="#bug-reporting-guidelines">bug reporting guidelines</a> and check the <a href="https://github.com/louischatriot/nedb/wiki/Change-log" target="_blank">change log</a> before submitting an already fixed bug :)
-
-## Support NeDB development
-
-<img src="http://i.imgur.com/mpwi4lf.jpg">
-
-No time to <a href="#pull-requests">help out</a>? You can support NeDB development by sending money or bitcoins!
-
-Money: [![Donate to author](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=louis%2echatriot%40gmail%2ecom&lc=US&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHostedGuest)
-
-Bitcoin address: 1dDZLnWpBbodPiN8sizzYrgaz5iahFyb1
-
 
 ## Installation, tests
 Module name on npm and bower is `nedb`.
@@ -281,10 +266,10 @@ When a field in a document is an array, NeDB first tries to see if the query val
 
 ```javascript
 // Exact match
-db.find({ satellites: ['Phobos', 'Deimos'] }, function (err, docs) {
+db.find({ satellites: ['Phobos', 'Deimos'] }, function (err, docs) {
   // docs contains Mars
 })
-db.find({ satellites: ['Deimos', 'Phobos'] }, function (err, docs) {
+db.find({ satellites: ['Deimos', 'Phobos'] }, function (err, docs) {
   // docs is empty
 })
 
